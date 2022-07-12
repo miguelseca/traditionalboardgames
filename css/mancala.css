@@ -1,0 +1,61 @@
+ .board
+ {
+   display:flex;
+   background-color:SaddleBrown;
+   height:200px;
+   width:800px;
+   border-radius:50px;
+   padding:30px;
+ }
+ 
+ .section
+ {
+   background-color:rgba(255, 255, 255, 0.03);
+   margin:5px;
+ }
+ 
+ .endsection
+ {
+   display:flex;
+   flex-grow:1;
+ }
+ 
+ .midsection
+ {
+   display:flex;
+   flex-direction:column;
+   flex-grow:6;
+ }
+ 
+ .midrow
+ {
+   display:flex;
+   flex-grow:1;
+ }
+ 
+ .pot
+ {
+   position:relative;
+   background-color:rgba(255, 255, 255, 0.08);
+   flex-grow:1;
+   margin:5px;
+   border-radius:50px;
+   vertical-align: middle;
+   text-align: center;
+  
+ }
+ .pot:hover {
+  cursor: pointer;
+}
+ 
+
+p {
+  color: rgb(1, 1, 1);
+  font-size: 27px;
+  border: 1px solid white;
+ }
+ p:hover {
+  color: rgb(52, 48, 48);
+  font-size: 29px;
+  border: 1px solid white;
+ }

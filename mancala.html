@@ -3,21 +3,75 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Game School</title>
+    <title>Traditional Board Games</title>
+    <link rel="stylesheet" href="css/mancala.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 </head>
 
-<body >
-    <div id="header">  
+<body>
+    <div id="header">
         <h1>Mancala!</h1>
-        <h4>"quote!" </h4>        
+        <h4>"quote!" </h4>
+    </div>
+
+
+
+    <div class="board">
+        <div class="section endsection">
+            <div class="pot" id="mb">
+                <p>0</p>
+            </div>
         </div>
-
-
-    <h1> IN CONSTRUCTION</h1>
-    <a href="index.html"> BACK TO HOMEPAGE </a>
-</div>
-    
+        <div class="section midsection">
+            <div class="midrow topmid">
+                <div class="pot" onclick="jogada(1)">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(2)">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(3)" id="pt3">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(4)" id="pt4">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(5)" id="pt5">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(6)" id="pt6">
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="midrow botmid">
+                <div class="pot" onclick="jogada(7)" id="pb6">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(8)" id="pb5">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(9)" id="pb4">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(10)" id="pb3">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(11)" id="pb2">
+                    <p>4</p>
+                </div>
+                <div class="pot" onclick="jogada(12)" id="pb1">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+        <div class="section endsection">
+            <div class="pot" id="mt">
+                <p>0</p>
+            </div>
+        </div>
+    </div>
 
 
 

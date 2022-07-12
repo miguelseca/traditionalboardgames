@@ -3,15 +3,20 @@ body {
   background-color: black;
   font-family: Garamond, cursive;
   color: white;
-  /* background: url(/images/back.jpg); */
-  /* background-repeat: repeat; */
+  padding-top:100px;
   
 }
 
+p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
 a {
-
   color: white;
-  font-size: 17px;
+  font-size: 27px;
   border: 1px;
 
 }
@@ -21,5 +26,28 @@ h2 {
   font-size: 27px;
   border: 1px;
 
+}
+navbar {
+  display: flex;
+  justify-content:space-around; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
 
+navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+navbar a:hover {
+  background-color: black;
+  color: grey;
 }
