@@ -1,4 +1,32 @@
-const poke_container = document.getElementById('poke_container');
+const games = {
+    1: "chess",
+    2: "backgammon",
+    3: "tictactoe",
+    4: "go",
+    5: "checkers",
+    6: "mancala",
+    7: "ninemensmorris",
+    8: "tafl",
+    9: "mahjong"
+};
+
+
+function myFunction() {
+
+    const theGame = Math.floor(Math.random() * 9) + 1;
+    const g = games[theGame];
+    location.href = g + '.html';
+
+
+}
+
+
+
+
+
+
+
+//const poke_container = document.getElementById('poke_container');
 //const pokemons_number = 150;
 
 
