@@ -1,7 +1,23 @@
+/* @keyframes example {
+  0% {background-color: red;}
+  50% {background-color: rgb(69, 43, 197);}
+
+}
+
+@keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0.5; }
+  100% { opacity:1; }
+} */
+
+
 body {
+  animation: fadein 5s;
+  text-align: center;
   background-color: black;
   font-family: Garamond, cursive;
   color: white;
+  
   
 }
 
@@ -9,33 +25,38 @@ a {
 
   color: white;
   font-size: 17px;
+  border: 1px;
+
 
 }
 
 
-
 .grid-container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 200px 200px 200px;
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
     background-color: transparent;
     padding: 100px;
     align-items: center;
   }
   
-  .grid-item {
-    background-color: transparent;
-    justify-content: center;
-    position: relative;
-    display: block;  
-    object-fit: cover;
+  .image {
+    /* -webkit-backface-visibility: hidden; 
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);  */
+    opacity: 1;
+    /* display: block; */
     width: 100%;
-    max-height: 100%; 
-  
-  
+    height: auto;
+    transition: .5s ease;
+    /* backface-visibility: hidden; */
   }
-  
-  
+
+  .grid-item:hover .image{
+    opacity: 0.3;
+  }
+
+  .grid-item {
+    padding: 10px;
+  }
+
