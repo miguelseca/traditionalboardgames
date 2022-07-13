@@ -9,12 +9,37 @@ body {
 }
 
 a {
-
   color: white;
   font-size: 17px;
   border: 1px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  
 
 }
+
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  
+  align-items: center;
+}
+
+.menu-grid-item {
+  text-align: center;
+  cursor: pointer;
+
+
+}
+
 
 
 .grid-container {
@@ -22,7 +47,11 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: transparent;
-  padding: 100px;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  
   align-items: center;
 }
 
@@ -41,8 +70,7 @@ a {
 
 .grid-item {
   padding: 20px;
-  text-align: center;
-  border: 1px solid white;
+  text-align: center;  
   
 }
 
