@@ -58,8 +58,3 @@ p {
   font-size: 27px;
   border: 1px solid white;
  }
- p:hover {
-  color: rgb(52, 48, 48);
-  font-size: 29px;
-  border: 1px solid white;
- }
