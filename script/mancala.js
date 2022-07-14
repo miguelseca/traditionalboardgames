@@ -104,8 +104,8 @@ const jogada = (pot) => {
 
     if (!contPlay) {
         do {
-
-            setTimeout(jogadaIA, 2000);
+            alert('IA will play in 3 seconds');
+            setTimeout(jogadaIA, 3000);
             status_text.innerHTML += `IA TO PLAY: ${!contPlay} // `;
 
 
@@ -117,17 +117,17 @@ const jogada = (pot) => {
 const jogadaIA = () => {
 
     let p = Math.floor(Math.random() * (6) + 7);
-    // do {
-    // } while (gameState[p] == 0);
+    do {
+    } while (gameState[p] == 0);
 
     const IApecasAmover = gameState[p];
     let IAcontPlay = false;
     let IApotFinal = p + IApecasAmover;
     let passouMancala = false;
 
-    // if (IApotFinal > 13) {
-    //     IApotfinal -= 14;
-    // };
+    if (IApotFinal > 13) {
+        IApotfinal -= 14;
+    };
 
     const IApecasNoFinal = gameState[IApotFinal];
 
@@ -162,7 +162,10 @@ const jogadaIA = () => {
 
     };
 
-    if (IApotFinal == 13) IAcontPlay = true;
+    if (IApotFinal == 13) {
+        IAcontPlay = true;
+    };
+
     status_text.innerHTML += `Aditional IA turn: ${IAcontPlay} // `;
 
     updateMancala(gameState);
