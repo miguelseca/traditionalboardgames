@@ -40,8 +40,12 @@
    flex-grow:1;
    margin:5px;
    border-radius:50px;
-   vertical-align: middle;
    text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+   font-size: 35px;
   
  }
  .pot:hover {

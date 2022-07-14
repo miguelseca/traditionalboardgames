@@ -13,69 +13,49 @@
 <body>
     <div id="header">
         <h1>Mancala!</h1>
-        <h4>"quote!" </h4>
     </div>
 
 
+    <button onclick="newGame()">Start New Game</button>
+    <button onclick="updateMancala(gameState)">Update</button>
 
     <div class="board">
         <div class="section endsection">
-            <div class="pot" id="mb">
-                <p>0</p>
-            </div>
+            <div class="pot" id="13">0</div>
         </div>
         <div class="section midsection">
             <div class="midrow topmid">
-                <div class="pot" onclick="jogada(1)">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(2)">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(3)" id="pt3">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(4)" id="pt4">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(5)" id="pt5">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(6)" id="pt6">
-                    <p>4</p>
-                </div>
+                <div class="pot" id="12"></div>
+                <div class="pot" id="11"></div>
+                <div class="pot" id="10"></div>
+                <div class="pot" id="9"></div>
+                <div class="pot" id="8"></div>
+                <div class="pot" id="7"></div>
             </div>
             <div class="midrow botmid">
-                <div class="pot" onclick="jogada(7)" id="pb6">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(8)" id="pb5">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(9)" id="pb4">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(10)" id="pb3">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(11)" id="pb2">
-                    <p>4</p>
-                </div>
-                <div class="pot" onclick="jogada(12)" id="pb1">
-                    <p>4</p>
-                </div>
+                <div class="pot" onclick="jogada(0)" id="0"></div>
+                <div class="pot" onclick="jogada(1)" id="1"></div>
+                <div class="pot" onclick="jogada(2)" id="2"></div>
+                <div class="pot" onclick="jogada(3)" id="3"></div>
+                <div class="pot" onclick="jogada(4)" id="4"></div>
+                <div class="pot" onclick="jogada(5)" id="5"></div>
             </div>
         </div>
         <div class="section endsection">
-            <div class="pot" id="mt">
-                <p>0</p>
-            </div>
+            <div class="pot" id="6">0</div>
         </div>
+    </div>
+
+    <div>
+        <h1>GAME STATUS: </h1>
+    </div>
+    <div id="status">
+        <h1></h1>
     </div>
 
 
 
-
+    <script src="script/mancala.js"></script>
 </body>
 
 </html>
