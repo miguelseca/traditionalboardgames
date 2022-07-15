@@ -13,11 +13,8 @@ const games = {
 function getRandomGame() {
     const theGame = Math.floor(Math.random() * 9) + 1;
     const g = games[theGame];
-    location.href = g + '.html';
+    location.href = 'games/' + g + '.html';
 
-}
-function goTo(gameNumber) {
-    location.href = games[gameNumber] + '.html';
 }
 
 const meteo_container = document.getElementById('meteo');
@@ -29,7 +26,7 @@ const getMet = async () => {
 
     let elemento = document.createElement('div');
     elemento.classList.add('temp');
-    
+
     elemento.innerHTML = `
         
     <img src=${result.current.weather_icons}>
