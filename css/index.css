@@ -5,9 +5,7 @@ body {
   font-family: Garamond, cursive;
   color: white;
 
-
 }
-
 #meteo {
   position: fixed;
   top: 10px;
@@ -24,37 +22,30 @@ a {
 p {
   color: white;
   font-size: 20px;
-
 }
 
 @media screen and (max-width: 800px) {
-
   #meteo {
     opacity: 0;
-
+  }
+  body{
+    background-color: grey;
   }
 }
-
 
 .menu-grid {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   gap: 10px;
   background-color: transparent;
-
   align-items: center;
 }
 
 .menu-grid-item {
   text-align: center;
   cursor: pointer;
-
-
 }
-
-
 
 .grid-container {
   display: flex;
@@ -65,7 +56,6 @@ p {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
-
   align-items: center;
 }
 
